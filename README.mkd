@@ -1,1 +1,24 @@
 # Powerline status for the `FlowApp` https://flowapp.info/
+
+To setup add the following to one of your themes for this example Ill use tmux.
+
+```json
+// ~/.config/powerline/themes/tmux/default.json
+...
+            {
+                "function": "powerline_flowapp.flowapp",
+                "name": "flowapp"
+            },
+...
+
+```
+
+Add the highlight groups to your color schemes
+
+```json
+// ~/.config/powerline/colorschemes/default.json
+...
+        "flowapp": {"fg": "darkestgreen", "bg": "white", "attr": []},
+        "flowapp:divider":                    { "fg": "black", "bg": "green", "attr": [] }
+...
+```
