@@ -22,6 +22,9 @@ def flowapp(pl):
     if not asrun:
         return None
 
+    if flow == "not running":
+        return None
+
     flow_time = flow.split(status_delimiter)
 
     return [{
